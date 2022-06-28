@@ -23,6 +23,10 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'oauth'         => \App\Filters\OauthFilter::class,
+        'login'         => \Myth\Auth\Filters\LoginFilter::class,
+        'role'          => \Myth\Auth\Filters\RoleFilter::class,
+        'permission'    => \Myth\Auth\Filters\PermissionFilter::class,
     ];
 
     /**
@@ -36,6 +40,7 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            'login' => ['except' => ['register', 'register/*', 'user/*', 'user', 'api', 'api/*']]
         ],
         'after' => [
             'toolbar',
@@ -64,5 +69,12 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'oauth' => [
+            'before'    => [
+                'api',
+                'api/*'
+            ]
+        ]
+    ];
 }
