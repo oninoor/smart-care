@@ -1,0 +1,54 @@
+CRITICAL - 2022-09-22 19:34:48 --> Trying to get property 'name' of non-object
+#0 C:\xampp\htdocs\smart-care\app\Views\admin-edit-user.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin-edit-user', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\Admin.php(313): view('admin-edit-user', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin->show_edit_user('2')
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-22 23:12:30 --> Invalid file: profile-change-password.php
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile-change-...')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('profile-change-...', Array, true)
+#2 C:\xampp\htdocs\smart-care\app\Controllers\Profile.php(61): view('profile-change-...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Profile->show_change_password()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-09-22 23:12:44 --> Invalid file: profile-change-password.php
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile-change-...')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('profile-change-...', Array, true)
+#2 C:\xampp\htdocs\smart-care\app\Controllers\Profile.php(61): view('profile-change-...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Profile->show_change_password()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-09-22 23:15:45 --> Invalid file: profile-change-password.php
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile-change-...')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('profile-change-...', Array, true)
+#2 C:\xampp\htdocs\smart-care\app\Controllers\Profile.php(61): view('profile-change-...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Profile->show_change_password()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-09-22 23:38:37 --> Trying to get property 'name' of non-object
+#0 C:\xampp\htdocs\smart-care\app\Views\admin-edit-user.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin-edit-user', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\Admin.php(313): view('admin-edit-user', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin->show_edit_user('2')
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

@@ -1,0 +1,48 @@
+CRITICAL - 2022-09-06 22:08:11 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\smart-care\app\Views\admin-users.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin-users', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\Admin.php(190): view('admin-users', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin->show_users()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-06 22:11:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\smart-care\app\Views\admin-users.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin-users', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\Admin.php(190): view('admin-users', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin->show_users()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-06 22:11:16 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\smart-care\app\Views\admin-users.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin-users', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\Admin.php(190): view('admin-users', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin->show_users()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-06 22:12:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\smart-care\app\Views\admin-users.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin-users', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\Admin.php(190): view('admin-users', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin->show_users()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

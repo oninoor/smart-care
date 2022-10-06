@@ -1,0 +1,10 @@
+CRITICAL - 2021-07-09 05:32:43 --> Invalid file: layouts-horizontal-dark-topbar.php
+#0 /opt/lampp/htdocs/MInia-CI-Admin/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /opt/lampp/htdocs/MInia-CI-Admin/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/MInia-CI-Admin/app/Controllers/Home.php(230): view()
+#3 /opt/lampp/htdocs/MInia-CI-Admin/system/CodeIgniter.php(936): App\Controllers\Home->show_layouts_dark_topbar()
+#4 /opt/lampp/htdocs/MInia-CI-Admin/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/MInia-CI-Admin/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/MInia-CI-Admin/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/MInia-CI-Admin/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}

@@ -1,0 +1,49 @@
+ERROR - 2022-06-26 10:34:30 --> Error connecting to the database: Unknown database 'smart-care'
+CRITICAL - 2022-06-26 13:26:01 --> Call to undefined method OAuth2\Server::setUser()
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Auth->process_register()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-26 14:05:22 --> Argument 1 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type string, null given, called in C:\xampp\htdocs\smart-care\app\Controllers\Auth.php on line 45
+#0 C:\xampp\htdocs\smart-care\app\Controllers\Auth.php(45): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Auth->process_register()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-26 14:10:01 --> Argument 1 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type string, null given, called in C:\xampp\htdocs\smart-care\app\Controllers\Auth.php on line 45
+#0 C:\xampp\htdocs\smart-care\app\Controllers\Auth.php(45): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Auth->process_register()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-26 14:45:23 --> strong_password is not a valid rule.
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '11442233', Array, Array)
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\smart-care\app\Controllers\Auth.php(42): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Auth->process_register()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-06-26 15:27:47 --> Undefined index: password_hash
+#0 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(435): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 435, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(315): OAuth2\Storage\Pdo->checkPassword(Array, '11442233')
+#2 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\GrantType\UserCredentials.php(57): OAuth2\Storage\Pdo->checkUserCredentials('admin', '11442233')
+#3 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(175): OAuth2\GrantType\UserCredentials->validateRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#4 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(87): OAuth2\Controller\TokenController->grantAccessToken(Object(OAuth2\Request), Object(OAuth2\Response))
+#5 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Server.php(320): OAuth2\Controller\TokenController->handleTokenRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#6 C:\xampp\htdocs\smart-care\app\Controllers\User.php(18): OAuth2\Server->handleTokenRequest(Object(OAuth2\Request))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}

@@ -1,0 +1,369 @@
+CRITICAL - 2022-06-27 11:55:47 --> Cannot use object of type Myth\Auth\Entities\User as array
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\SetUp->__construct()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 14:27:38 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-06-27 14:27:52 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 14:35:39 --> Undefined property: mysqli::$id
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 14:37:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getObject()
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 14:38:47 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 14:39:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 14:58:33 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 14:59:10 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 14:59:51 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 15:00:07 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 15:00:47 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 15:04:13 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 15:04:47 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 15:05:37 --> Array to string conversion
+#0 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->provide_hospitals()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-27 17:12:28 --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oninoor18' in 'where clause'
+#0 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(96): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\ClientAssertionType\HttpBasic.php(73): OAuth2\Storage\Pdo->checkClientCredentials('oninoor18', '11442233')
+#2 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(163): OAuth2\ClientAssertionType\HttpBasic->validateRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#3 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(87): OAuth2\Controller\TokenController->grantAccessToken(Object(OAuth2\Request), Object(OAuth2\Response))
+#4 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Server.php(320): OAuth2\Controller\TokenController->handleTokenRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#5 C:\xampp\htdocs\smart-care\app\Controllers\User.php(18): OAuth2\Server->handleTokenRequest(Object(OAuth2\Request))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\User->login()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-06-27 17:31:29 --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tes1' in 'where clause'
+#0 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(95): PDO->query('SELECT * FROM o...')
+#1 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\ClientAssertionType\HttpBasic.php(73): OAuth2\Storage\Pdo->checkClientCredentials('tes1', 'tes1')
+#2 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(163): OAuth2\ClientAssertionType\HttpBasic->validateRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#3 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(87): OAuth2\Controller\TokenController->grantAccessToken(Object(OAuth2\Request), Object(OAuth2\Response))
+#4 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Server.php(320): OAuth2\Controller\TokenController->handleTokenRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#5 C:\xampp\htdocs\smart-care\app\Controllers\User.php(18): OAuth2\Server->handleTokenRequest(Object(OAuth2\Request))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\User->login()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-06-27 17:32:54 --> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':client_id' at line 1
+#0 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(95): PDO->query('SELECT * FROM o...')
+#1 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\ClientAssertionType\HttpBasic.php(73): OAuth2\Storage\Pdo->checkClientCredentials('tes1', 'tes1')
+#2 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(163): OAuth2\ClientAssertionType\HttpBasic->validateRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#3 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(87): OAuth2\Controller\TokenController->grantAccessToken(Object(OAuth2\Request), Object(OAuth2\Response))
+#4 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Server.php(320): OAuth2\Controller\TokenController->handleTokenRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#5 C:\xampp\htdocs\smart-care\app\Controllers\User.php(18): OAuth2\Server->handleTokenRequest(Object(OAuth2\Request))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\User->login()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-06-27 17:48:03 --> Undefined variable: userInfo
+#0 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(453): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 453, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Storage\Pdo.php(314): OAuth2\Storage\Pdo->getUser('oninoor18')
+#2 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\GrantType\UserCredentials.php(57): OAuth2\Storage\Pdo->checkUserCredentials('oninoor18', '11442233')
+#3 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(175): OAuth2\GrantType\UserCredentials->validateRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#4 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Controller\TokenController.php(87): OAuth2\Controller\TokenController->grantAccessToken(Object(OAuth2\Request), Object(OAuth2\Response))
+#5 C:\xampp\htdocs\smart-care\vendor\bshaffer\oauth2-server-php\src\OAuth2\Server.php(320): OAuth2\Controller\TokenController->handleTokenRequest(Object(OAuth2\Request), Object(OAuth2\Response))
+#6 C:\xampp\htdocs\smart-care\app\Controllers\User.php(18): OAuth2\Server->handleTokenRequest(Object(OAuth2\Request))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-06-27 17:49:19 --> syntax error, unexpected ';', expecting ')'
+#0 C:\xampp\htdocs\smart-care\vendor\composer\ClassLoader.php(344): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('OAuth2\\Storage\\...')
+#2 C:\xampp\htdocs\smart-care\app\Libraries\Oauth.php(22): spl_autoload_call('OAuth2\\Storage\\...')
+#3 C:\xampp\htdocs\smart-care\app\Libraries\Oauth.php(13): App\Libraries\Oauth->init()
+#4 C:\xampp\htdocs\smart-care\app\Controllers\User.php(16): App\Libraries\Oauth->__construct()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\User->login()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-27 19:52:15 --> Call to undefined function App\Controllers\user_id()
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\SetUp->__construct()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 19:53:41 --> Call to undefined function App\Controllers\user_id()
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\SetUp->__construct()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 19:53:49 --> Call to undefined function App\Controllers\user_id()
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\SetUp->__construct()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 23:02:54 --> min_lenght is not a valid rule.
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '11442233', Array, Array)
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(92): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-06-27 23:04:37 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-27 23:05:17 --> There is no data to update.
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->update('2', Array)
+#3 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(107): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-06-27 23:08:07 --> There is no data to update.
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->update('2', Array)
+#3 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(109): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-06-27 23:09:46 --> Unknown column 'oauth_clients.deleted_at' in 'where clause'
+CRITICAL - 2022-06-27 23:09:46 --> Unknown column 'oauth_clients.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'TN8Bv7XMF46q7n7...')
+#6 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(137): CodeIgniter\BaseModel->find('TN8Bv7XMF46q7n7...')
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-06-27 23:11:21 --> Unknown column 'oauth_clients.deleted_at' in 'where clause'
+CRITICAL - 2022-06-27 23:11:21 --> Unknown column 'oauth_clients.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Model.php(597): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(152): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#10 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-06-27 23:11:41 --> Unknown column 'oauth_clients.deleted_at' in 'where clause'
+CRITICAL - 2022-06-27 23:11:41 --> Unknown column 'oauth_clients.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'BRm5DRunOHiIMI5...')
+#6 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(137): CodeIgniter\BaseModel->find('BRm5DRunOHiIMI5...')
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->process_hospital_data()
+#8 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-06-27 23:13:45 --> Cannot use object of type Myth\Auth\Entities\User as array
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-06-27 23:30:46 --> Table 'smart_care.hospital' doesn't exist
+CRITICAL - 2022-06-27 23:30:46 --> Table 'smart_care.hospital' doesn't exist
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(184): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-27 23:31:20 --> Undefined variable: row
+#0 C:\xampp\htdocs\smart-care\app\Views\set-up-credentials.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 98, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('set-up-credenti...', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(195): view('set-up-credenti...', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-27 23:31:42 --> Trying to get property 'id_hospital' of non-object
+#0 C:\xampp\htdocs\smart-care\app\Views\set-up-credentials.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 98, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('set-up-credenti...', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(195): view('set-up-credenti...', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-27 23:32:02 --> syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('set-up-credenti...', Array, true)
+#2 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(195): view('set-up-credenti...', Array)
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#4 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-06-27 23:32:12 --> Undefined index: id_hospital
+#0 C:\xampp\htdocs\smart-care\app\Views\set-up-credentials.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 98, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('set-up-credenti...', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(195): view('set-up-credenti...', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-27 23:32:55 --> Trying to get property 'id_hospital' of non-object
+#0 C:\xampp\htdocs\smart-care\app\Views\set-up-credentials.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('set-up-credenti...', Array, true)
+#4 C:\xampp\htdocs\smart-care\app\Controllers\SetUp.php(195): view('set-up-credenti...', Array)
+#5 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SetUp->show_credentials()
+#6 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SetUp))
+#7 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\smart-care\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\smart-care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
