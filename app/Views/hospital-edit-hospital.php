@@ -179,10 +179,32 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="uri" class="form-label">URI</label>
-                        <input class="form-control <?= ($validation->hasError('uri')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('uri') ? old('uri') : $hospital->uri ?>" name="uri" id="uri" autocomplete="off">
+                        <label for="base_url" class="form-label">Base URL</label>
+                        <input class="form-control <?= ($validation->hasError('base_url')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('base_url') ? old('base_url') : $hospital->base_url ?>" name="base_url" id="base_url" autocomplete="off">
                         <div class="invalid-feedback">
-                          <?= $validation->getError('uri'); ?>
+                          <?= $validation->getError('base_url'); ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label for="medical_resume_uri" class="form-label">Medical Resume URI</label>
+                        <input class="form-control <?= ($validation->hasError('medical_resume_uri')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('medical_resume_uri') ? old('medical_resume_uri') : $hospital->medical_resume_uri ?>" name="medical_resume_uri" id="medical_resume_uri" autocomplete="off">
+                        <div class="invalid-feedback">
+                          <?= $validation->getError('medical_resume_uri'); ?>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end col -->
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label for="medical_resume_detail_uri" class="form-label">Medical Resume Detail URI</label>
+                        <input class="form-control <?= ($validation->hasError('medical_resume_detail_uri')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('medical_resume_detail_uri') ? old('medical_resume_detail_uri') : $hospital->medical_resume_detail_uri ?>" name="medical_resume_detail_uri" id="medical_resume_detail_uri" autocomplete="off">
+                        <div class="invalid-feedback">
+                          <?= $validation->getError('medical_resume_detail_uri'); ?>
                         </div>
                       </div>
                     </div>
@@ -191,7 +213,7 @@
                   <!-- end row -->
 
                   <div class="d-flex justify-content-end">
-                    <button class="btn btn-primary">Update</button>
+                    <button class="btn btn-primary" type="submit">Update</button>
                   </div>
 
               </div>

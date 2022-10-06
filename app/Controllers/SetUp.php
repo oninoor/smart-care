@@ -15,21 +15,20 @@ class SetUp extends BaseController
         $this->hospitalModel        = new HospitalModel();
         $this->oauthClientsModel    = new OauthClientsModel();
         $this->db                   = \Config\Database::connect();
-
-        // Check if set up is alredy done
-        $set_up = $this->userModel->find(user_id());
-        if ($set_up->set_up == 2) {
-            return redirect()->to(base_url('dashboard'));
-        }
     }
 
     // Show set up settings
     public function index()
     {
-        // Check if set up step one is alredy done
-        $set_up = $this->userModel->find(user_id());
-        if ($set_up->set_up == 1) {
-            return redirect()->to(base_url('set-up/credentials'));
+        if (in_groups('user')) {
+            // Check if set up step one is alredy done
+            if (user()->set_up == 1) {
+                return redirect()->to(base_url('set-up/credentials'));
+            } elseif (user()->set_up == 2) {
+                return redirect()->to(base_url('/'));
+            }
+        } else {
+            return redirect()->to(base_url('/admin'));
         }
 
         $data = [
@@ -86,6 +85,9 @@ class SetUp extends BaseController
             'client_id'         => 'required|min_length[2]|alpha_numeric',
             'client_secret'     => 'required|min_length[2]|alpha_numeric',
             'grant_type'        => 'required',
+            'base_url'          => 'required|valid_url|max_length[255]',
+            'medical_resume_uri'        => 'required|alpha_dash',
+            'medical_resume_detail_uri' => 'required|alpha_dash',
         ];
 
         // Validation Check
@@ -102,7 +104,7 @@ class SetUp extends BaseController
         $data = [
             'id'            => user_id(),
             'id_hospital'   => $id_hospital,
-            'setup'        => 1
+            'set_up'        => 1
         ];
         if (!$this->userModel->save($data)) {
             session()->setFlashdata('pesan', 'Failed to save data!|error');
@@ -111,13 +113,16 @@ class SetUp extends BaseController
 
         // Update credential for selected hospital
         $data = [
-            'id'            => $this->request->getVar('hospital'),
-            'email'         => $this->request->getVar('email'),
-            'username'      => $this->request->getVar('username'),
-            'password'      => $this->request->getVar('password'),
-            'client_id'     => $this->request->getVar('client_id'),
-            'client_secret' => $this->request->getVar('client_secret'),
-            'grant_type'    => $this->request->getVar('grant_type'),
+            'id'                        => $this->request->getVar('hospital'),
+            'email'                     => $this->request->getVar('email'),
+            'username'                  => $this->request->getVar('username'),
+            'password'                  => $this->request->getVar('password'),
+            'client_id'                 => $this->request->getVar('client_id'),
+            'client_secret'             => $this->request->getVar('client_secret'),
+            'grant_type'                => $this->request->getVar('grant_type'),
+            'base_url'                  => $this->request->getVar('base_url'),
+            'medical_resume_uri'        => $this->request->getVar('medical_resume_uri'),
+            'medical_resume_detail_uri' => $this->request->getVar('medical_resume_detail_uri'),
         ];
 
         // Update data hospital
@@ -178,10 +183,13 @@ class SetUp extends BaseController
     // Show Credentials for user after initial set up
     public function show_credentials()
     {
-        // Check if set up step one is alredy done
-        $set_up = $this->userModel->find(user_id());
-        if ($set_up->set_up == 0) {
-            return redirect()->to(base_url('set-up'));
+        if (in_groups('user')) {
+            // Check if set up step one is alredy done
+            if (user()->set_up == 0) {
+                return redirect()->to(base_url('set-up'));
+            } elseif (user()->set_up == 2) {
+                return redirect()->to(base_url('/admin'));
+            }
         }
 
         // Get user
@@ -221,6 +229,6 @@ class SetUp extends BaseController
             return redirect()->to(base_url('set-up/credentials/'));
         }
         session()->setFlashdata('pesan', 'Data has been saved!|success');
-        return redirect()->to(base_url('dashboard'));
+        return redirect()->to(base_url('/'));
     }
 }

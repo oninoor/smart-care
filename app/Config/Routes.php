@@ -33,45 +33,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 // -------------Routes Register-------------
-$routes->get('/register', 'Auth::show_register');
-
-$routes->post('/register', 'Auth::process_register');
-
-
-
-
-// -------------Routes Dashboard-------------
-$routes->get('/dashboard', 'Dashboard::index');
-
-
-
-
-// -------------Routes Apps-------------
-$routes->get('/apps/simrs-credential', 'Apps::show_simrs_credential');
-$routes->get('/apps/my-credential', 'Apps::show_my_credential');
-
-
-
-
-// -------------Routes Profile-------------
-$routes->get('/profile/my-profile', 'Profile::index');
-$routes->get('/profile/change-password', 'Profile::show_change_password');
-
-$routes->post('profile/process-change-password', 'Profile::process_change_password');
-$routes->post('profile/process-edit-user', 'Profile::process_edit_user');
-$routes->post('profile/process-edit-photo', 'Profile::process_edit_photo');
-$routes->post('/profile/process-edit-user', 'Profile::process_edit_user');
-
-
-
-
-// -------------Routes Profile-------------
-$routes->get('/admin/show-hospital', 'Admin::show_hospital');
-$routes->get('/admin/edit-hospital/(:num)', 'Admin::show_edit_hospital/$1');
-
-$routes->post('/admin/process-edit-hospital', 'Admin::process_edit_hospital');
-
-
+// $routes->get('/register', 'Auth::show_register');
+// $routes->post('/register', 'Auth::process_register');
 
 
 
@@ -87,19 +50,52 @@ $routes->post('/set-up/process-credential', 'SetUp::process_credential');
 
 
 
-// -------------Routes API - Disable Controller Direct Access-------------
-$routes->get('/apihospital', 'Errors::forbidden');
-$routes->get('/apihospital/(:any)', 'Errors::forbidden');
-$routes->get('/apivisit', 'Errors::forbidden');
-$routes->get('/apivisit/(:any)', 'Errors::forbidden');
+// -------------Routes Dashboard-------------
+$routes->get('/', 'Dashboard::index');
 
 
 
 
-// -------------Routes API-------------
-$routes->get('/api/hospital', 'ApiHospitals::index');
+// -------------Routes Apps-------------
+$routes->get('/apps/hospital-credential', 'Apps::show_hospital_credential', ['filter' => 'role:user']);
+$routes->get('/apps/smartcare-credential', 'Apps::show_smartcare_credential', ['filter' => 'role:user']);
+$routes->get('/apps/api-request-sent', 'Apps::show_api_request_sent', ['filter' => 'role:user']);
+$routes->get('/apps/api-request-accepted', 'Apps::show_api_request_accepted', ['filter' => 'role:user']);
 
-$routes->post('/api/visit', 'ApiVisits::index');
+$routes->post('/app/process-edit-hospital-credential', 'Apps::process_edit_hospital_credential', ['filter' => 'role:user']);
+
+
+
+
+// -------------Routes Profile-------------
+$routes->get('/profile', 'Profile::index', ['filter' => 'role:user']);
+$routes->get('/profile/change-password', 'Profile::show_change_password', ['filter' => 'role:user']);
+
+$routes->post('profile/process-change-password', 'Profile::process_change_password', ['filter' => 'role:user']);
+$routes->post('/profile/process-edit-user', 'Profile::process_edit_user', ['filter' => 'role:user']);
+$routes->post('/profile/process-edit-photo', 'Profile::process_edit_photo', ['filter' => 'role:user']);
+$routes->post('/profile/process-edit-user', 'Profile::process_edit_user', ['filter' => 'role:user']);
+
+
+
+
+// -------------Routes Admin-------------
+$routes->get('/admin', 'Admin::index', ['filter' => 'role:admin']);
+$routes->get('/admin/hospital', 'Admin::show_hospital', ['filter' => 'role:admin']);
+$routes->get('/admin/add-hospital', 'Admin::show_add_hospital', ['filter' => 'role:admin']);
+$routes->get('/admin/edit-hospital/(:num)', 'Admin::show_edit_hospital/$1', ['filter' => 'role:admin']);
+$routes->get('/admin/users', 'Admin::show_users', ['filter' => 'role:admin']);
+$routes->get('/admin/edit-user/(:num)', 'Admin::show_edit_user/$1', ['filter' => 'role:admin']);
+$routes->get('/admin/add-user', 'Admin::show_add_user', ['filter' => 'role:admin']);
+
+$routes->post('/admin/process-edit-hospital', 'Admin::process_edit_hospital', ['filter' => 'role:admin']);
+$routes->post('/admin/process-add-hospital', 'Admin::process_add_hospital', ['filter' => 'role:admin']);
+$routes->post('/admin/delete-hospital', 'Admin::delete_hospital', ['filter' => 'role:admin']);
+$routes->post('/admin/process/add-user', 'Admin::process_add_user', ['filter' => 'role:admin']);
+$routes->post('/admin/process-edit-user', 'Admin::process_edit_user', ['filter' => 'role:admin']);
+$routes->post('/admin/process-edit-image-user', 'Admin::process_edit_image_user', ['filter' => 'role:admin']);
+$routes->post('/admin/process-active', 'Admin::process_active', ['filter' => 'role:admin']);
+$routes->post('/admin/process-role', 'Admin::process_role', ['filter' => 'role:admin']);
 
 
 

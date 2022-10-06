@@ -108,19 +108,19 @@
                         <div class="row">
                           <div class="col-lg-6">
                             <div class="mb-3">
-                              <label for="username" class="form-label">Username</label>
-                              <input type="text" class="form-control <?= ($validation->hasError('username')) ? 'is-invalid' : '' ?>" id="username" name="username" value="<?= old('username') ?>">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : '' ?>" id="email" name="email" value="<?= old('email') ?>">
                               <div class="invalid-feedback">
-                                <?= $validation->getError('username'); ?>
+                                <?= $validation->getError('email'); ?>
                               </div>
                             </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="mb-3">
-                              <label for="email" class="form-label">Email</label>
-                              <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : '' ?>" id="email" name="email" value="<?= old('email') ?>">
+                              <label for="username" class="form-label">Username</label>
+                              <input type="text" class="form-control <?= ($validation->hasError('username')) ? 'is-invalid' : '' ?>" id="username" name="username" value="<?= old('username') ?>">
                               <div class="invalid-feedback">
-                                <?= $validation->getError('email'); ?>
+                                <?= $validation->getError('username'); ?>
                               </div>
                             </div>
                           </div>
@@ -146,6 +146,7 @@
                             </div>
                           </div>
                         </div>
+
                         <div class="row">
                           <div class="col-lg-6">
                             <div class="mb-3">
@@ -162,6 +163,42 @@
                               <input type="text" class="form-control <?= ($validation->hasError('grant_type')) ? 'is-invalid' : '' ?>" id="grant_type" name="grant_type" value="<?= old('grant_type') ?>">
                               <div class="invalid-feedback">
                                 <?= $validation->getError('grant_type'); ?>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="mb-3">
+                              <label for="base_url" class="form-label">Base URL</label>
+                              <input type="text" class="form-control <?= ($validation->hasError('base_url')) ? 'is-invalid' : '' ?>" id="base_url" name="base_url" value="<?= old('base_url') ?>">
+                              <div id="base_url" class="form-text">Ex: https://example-api.io/</div>
+                              <div class="invalid-feedback">
+                                <?= $validation->getError('base_url'); ?>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="mb-3">
+                              <label for="medical_resume_uri" class="form-label">Medical Resume URI</label>
+                              <input type="text" class="form-control <?= ($validation->hasError('medical_resume_uri')) ? 'is-invalid' : '' ?>" id="medical_resume_uri" name="medical_resume_uri" value="<?= old('medical_resume_uri') ?>">
+                              <div id="medical_resume_uri" class="form-text">Ex: medical-resume</div>
+                              <div class="invalid-feedback">
+                                <?= $validation->getError('medical_resume_uri'); ?>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="mb-3">
+                              <label for="medical_resume_detail_uri" class="form-label">Medical Resume Detail URI</label>
+                              <input type="text" class="form-control <?= ($validation->hasError('medical_resume_detail_uri')) ? 'is-invalid' : '' ?>" id="medical_resume_detail_uri" name="medical_resume_detail_uri" value="<?= old('medical_resume_detail_uri') ?>">
+                              <div id="medical_resume_uri" class="form-text">Ex: medical-resume-detail</div>
+                              <div class="invalid-feedback">
+                                <?= $validation->getError('medical_resume_detail_uri'); ?>
                               </div>
                             </div>
                           </div>

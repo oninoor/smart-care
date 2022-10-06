@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\HospitalModel;
 use App\Models\OauthClientsModel;
+use CodeIgniter\Database\MySQLi\Builder;
 use Myth\Auth\Models\UserModel;
 use Myth\Auth\Models\LoginModel;
 use Myth\Auth\Password;
@@ -38,12 +39,17 @@ class Profile extends BaseController
 
         $access_history = $this->loginModel->where('email', user()->email)->orderBy('date', 'desc')->findAll(30);
 
+        $builder = $this->db->table('hospitals');
+        $builder->where('id_hospital', user()->id_hospital);
+        $hospital = $builder->get()->getRow();
+
         $data = [
             'title_meta' => view('partials/title-meta', ['title' => 'My Profile']),
             'page_title' => view('partials/page-title', ['title' => 'My Profile', 'li_1' => 'Profile', 'li_2' => 'My Profile']),
             'auth_group' => $auth_group,
             'auth_group_permission' => $auth_group_permission,
             'access_history' => $access_history,
+            'hospital' => $hospital,
             'validation'     => \Config\Services::validation(),
         ];
         return view('profile-my-profile', $data);
@@ -116,7 +122,7 @@ class Profile extends BaseController
         // Validate
         if (!$this->validate($rules)) {
             session()->setFlashdata('pesan', 'Validation failed, please check again|error');
-            return redirect()->to(base_url('profile/my-profile'))->withInput()->with('errors', $this->validator->getErrors());
+            return redirect()->to(base_url('profile'))->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $data = [
@@ -130,11 +136,11 @@ class Profile extends BaseController
         // Update data user
         if (!$this->userModel->save($data)) {
             session()->setFlashdata('pesan', 'Failed to update data|error');
-            return redirect()->to(base_url('profile/my-profile'))->withInput()->with('errors', $this->validator->getErrors());
+            return redirect()->to(base_url('profile'))->withInput()->with('errors', $this->validator->getErrors());
         }
 
         session()->setFlashdata('pesan', 'Data has been updated|success');
-        return redirect()->to(base_url('profile/my-profile'));
+        return redirect()->to(base_url('profile'));
     }
 
     public function process_edit_photo()
@@ -160,9 +166,9 @@ class Profile extends BaseController
         // Update gambar
         if (!$this->userModel->save($data)) {
             session()->setFlashdata('pesan', 'Failed to update data|error');
-            return redirect()->to(base_url('profile/my-profile'));
+            return redirect()->to(base_url('profile'));
         }
         session()->setFlashdata('pesan', 'Data has been updated|success');
-        return redirect()->to(base_url('profile/my-profile'));
+        return redirect()->to(base_url('profile'));
     }
 }

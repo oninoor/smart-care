@@ -121,8 +121,8 @@ return [
 
     // Tambahan
     "Setup" => "Setup",
-    "Simrs_Credential"  => "SIMRS Credential",
-    "My_Credential"  => "My Credential",
+    "Hospital_credential"  => "Hospital Credential",
+    "Smartcare_credential"  => "Smartcare Credential",
     "Api_Requests_Sent" => "API Requests Sent",
     "Api_Requests_Accepted" => "API Requests Accepted",
     "My_Profile"    => "My Profile",
@@ -136,6 +136,9 @@ return [
     "Add_User" => "Add User",
     "Edit_User" => "Edit User",
     "Users" => "Users",
+    "Smartcare_api_req" => "API Request Sent",
+    "Smartcare_api_accepted" => "API Request Accepted",
+    "My Profile" => "My Profile",
 
 
 ];

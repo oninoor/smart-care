@@ -14,6 +14,9 @@
   <!-- Responsive datatable examples -->
   <link href="<?= base_url('assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') ?>" rel="stylesheet" type="text/css" />
 
+  <!-- Sweet Alert-->
+  <link href="<?= base_url('assets/libs/sweetalert2/sweetalert2.min.css') ?>" rel="stylesheet" type="text/css" />
+
   <!-- alertifyjs Css -->
   <link href="<?= base_url('assets/libs/alertifyjs/build/css/alertify.min.css') ?>" rel="stylesheet" type="text/css" />
 
@@ -119,8 +122,7 @@
                                 <form action="<?= base_url('admin/delete-hospital/') ?>" method="POST" id="delete-hospital-<?= $row->id ?>">
                                   <?php csrf_field() ?>
                                   <input type="hidden" name="id" id="id" value="<?= $row->id ?>">
-                                  <input type="hidden" name="redirect" id="redirect" value="<?= current_url() ?>">
-                                  <li><button class="dropdown-item" type="submit" id="delete-user" data-id="<?= $row->id ?>">Hapus</button></li>
+                                  <li><button class="dropdown-item" type="submit" id="delete-hospital" data-id="<?= $row->id ?>">Hapus</button></li>
                                 </form>
                                 <li><a class="dropdown-item" href="<?= base_url('admin/edit-hospital/' . $row->id) ?>">Edit</a></li>
                                 <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#showCredential<?= $row->id ?>">Credentials</button></li>
@@ -142,6 +144,17 @@
 
                                   <div class="col-12">
                                     <div class="mb-3">
+                                      <label for="username" class="form-label">Username</label>
+                                      <input class="form-control <?= ($validation->hasError('username')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('username') ? old('username') : $row->username ?>" name="username" id="username" autocomplete="off">
+                                      <div class="invalid-feedback">
+                                        <?= $validation->getError('username'); ?>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end col -->
+
+                                  <div class="col-12">
+                                    <div class="mb-3">
                                       <label for="email" class="form-label">Email</label>
                                       <input class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('email') ? old('email') : $row->email ?>" name="email" id="email" autocomplete="off">
                                       <div class="invalid-feedback">
@@ -153,7 +166,7 @@
 
                                   <div class="col-12">
                                     <div class="mb-3">
-                                      <label for="password" class="form-label">password</label>
+                                      <label for="password" class="form-label">Password</label>
                                       <input class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : '' ?>" type="text" value="<?= old('password') ? old('password') : $row->password ?>" name="password" id="password" autocomplete="off">
                                       <div class="invalid-feedback">
                                         <?= $validation->getError('password'); ?>
@@ -223,6 +236,11 @@
     </div>
     <!-- End Page-content -->
 
+    <!-- Notification -->
+    <?php if (session()->getFlashdata('pesan')) : ?>
+      <div id="pesan" data-pesan="<?= session()->getFlashdata('pesan') ?>"></div>
+    <?php endif; ?>
+
 
     <?= $this->include('partials/footer') ?>
   </div>
@@ -244,6 +262,9 @@
 <!-- Responsive examples -->
 <script src="<?= base_url('assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js') ?>"></script>
 <script src="<?= base_url('assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') ?>"></script>
+
+<!-- Sweet Alerts js -->
+<script src="<?= base_url('assets/libs/sweetalert2/sweetalert2.min.js') ?>"></script>
 
 <!-- Notify -->
 <script src="<?= base_url('assets/libs/alertifyjs/build/alertify.min.js') ?>"></script>

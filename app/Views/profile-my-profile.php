@@ -58,7 +58,11 @@
                       <div class="flex-grow-1">
                         <div>
                           <h5 class="font-size-16 mb-1"><?= ucwords(user()->username) ?></h5>
-                          <p class="text-muted font-size-13"><?= $auth_group['description'] ?></p>
+                          <div class="d-flex gap-2">
+                            <p class="text-muted font-size-13"><?= $auth_group['description'] ?></p>
+                            <p>-</p>
+                            <p class="text-muted font-size-13"><?= $hospital->name ?></p>
+                          </div>
 
                           <div class="d-flex flex-wrap align-items-start gap-2 gap-lg-3 text-muted font-size-13">
                             <div><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i><?= user()->email ?></div>
