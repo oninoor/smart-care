@@ -51,15 +51,6 @@
               <h5 class="card-title">Total <span class="text-muted fw-normal ms-2">(<?= count($users) ?>)</span></h5>
             </div>
           </div>
-
-          <div class="col-md-6">
-            <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
-              <div>
-                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#addNewUserModal"><i class="bx bx-plus me-1"></i> Tambah</button>
-              </div>
-            </div>
-
-          </div>
         </div>
         <!-- end row -->
 

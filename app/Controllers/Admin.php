@@ -259,6 +259,7 @@ class Admin extends BaseController
     $builder->select('users.*, auth_groups.id as group_id, auth_groups.description');
     $builder->join('auth_groups_users', 'users.id = auth_groups_users.user_id');
     $builder->join('auth_groups', 'auth_groups_users.group_id = auth_groups.id');
+    $builder->where('users.deleted_at', null);
     $users = $builder->get()->getResultArray();
 
     $data = [

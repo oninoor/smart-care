@@ -61,6 +61,8 @@ class SetUp extends BaseController
 
         // If there was a keyword
         $builder = $this->db->table('hospitals');
+        $builder->where('client_id', null);
+        $builder->where('client_secret', null);
         $builder->like('id_hospital', $keyword);
         $builder->orLike('name', $keyword);
         $builder->limit(50);

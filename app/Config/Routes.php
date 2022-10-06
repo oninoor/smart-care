@@ -96,6 +96,7 @@ $routes->post('/admin/process-edit-user', 'Admin::process_edit_user', ['filter' 
 $routes->post('/admin/process-edit-image-user', 'Admin::process_edit_image_user', ['filter' => 'role:admin']);
 $routes->post('/admin/process-active', 'Admin::process_active', ['filter' => 'role:admin']);
 $routes->post('/admin/process-role', 'Admin::process_role', ['filter' => 'role:admin']);
+$routes->post('/admin/delete-user', 'Admin::delete_user', ['filter' => 'role:admin']);
 
 
 
